@@ -4,40 +4,106 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>formular</title>
         <script src="index.js" defer></script>
     </head>
     <body>
+        <style>
+            body {
+                background-color: #333;
+                color: #999;
+                font-family: sans-serif;
+                font-weight: 500;
+                margin: 1rem 1rem;
+            }
+        </style>
+        <h1>Regestrierungsformular</h1>
         <form>
-            <label for="vorName">Vorname</label>
-            <input type="text" name="" id="vorName" />
+            <label for="vorName">Vorname <br /></label>
+            <input
+                type="text"
+                name=""
+                id="vorName"
+                placeholder="Vorname"
+                required
+            />
+            <br />
+            <br />
+            <label for="nachName">Nachname <br /></label>
+            <input
+                type="text"
+                name=""
+                id="nachName"
+                placeholder="Nachname"
+                required
+            />
+            <br />
+            <br />
+            <label for="email">E-Mail-Adresse <br /></label>
+            <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="Email"
+                required
+            />
+            <br />
+            <br />
+            <label for="passwort">Passwort <br /></label>
+            <input
+                type="password"
+                name=""
+                id="passwort"
+                placeholder="Passwort"
+                required
+            />
+            <br />
+            <br />
+            <label for="repPasswort">Passwort wiederholen <br /></label>
+            <input
+                type="password"
+                name=""
+                id="repPasswort"
+                placeholder="Passwort"
+                required
+            />
+            <br />
+            <br />
+            <label for="birthday">Geburtstag <br /></label>
+            <input type="date" name="" id="birthday" required />
+            <br />
+            <br /><label for="gender">Geschlecht <br /></label>
+            <select name="" id="gender" required>
+                <option value="">...</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="diverse">diverse</option>
+            </select>
 
-            <label for="nachName">Nachname</label>
-            <input type="text" name="" id="nachName" />
-
-            <label for="email">E-Mail-Adresse</label>
-            <input type="email" name="" id="email" />
-
-            <label for="passwort">Passwort</label>
-            <input type="password" name="" id="passwort" />
-
-            <label for="repPasswort">Passwort wiederholen</label>
-            <input type="password" name="" id="repPasswort" />
-
-            <label for="birthday">Geburtstag</label>
-            <input type="date" name="" id="birthday" />
-
-            <label for="gender">Geschlecht</label>
-            <input type="text" name="" id="gender" />
-
-            <label for="info">Kleine Vorstellung</label>
-            <input type="text" name="" id="info" />
-
+            <br />
+            <br />
+            <label for="info">Kleine Vorstellung <br /></label>
+            <textarea
+                rows="8"
+                cols="35"
+                name=""
+                id="info"
+                placeholder="Ich bin ..."
+                required
+            ></textarea>
+            <br />
+            <br />
             <label for="agb">Zustimmung AGB</label>
-            <input type="radio" name="" id="agb" />
-
+            <input type="radio" name="" id="agb" required />
+            <br />
+            <br />
             <label for="datenschutz">Zustimmung Datenschutz</label>
-            <input type="radio" name="" id="datenschutz" />
+            <input type="radio" name="" id="datenschutz" required />
+
+            <br />
+            <br />
+            <input type="submit" value="speichern" />
+            <input type="reset" value="reset" />
         </form>
     </body>
 </html>
