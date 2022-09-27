@@ -22,7 +22,7 @@
             <label for="vorName">Vorname <br /></label>
             <input
                 type="text"
-                name=""
+                name="Vorname"
                 id="vorName"
                 placeholder="Vorname"
                 required
@@ -32,7 +32,7 @@
             <label for="nachName">Nachname <br /></label>
             <input
                 type="text"
-                name=""
+                name="Nachname"
                 id="nachName"
                 placeholder="Nachname"
                 required
@@ -42,7 +42,7 @@
             <label for="email">E-Mail-Adresse <br /></label>
             <input
                 type="email"
-                name=""
+                name="Email"
                 id="email"
                 placeholder="Email"
                 required
@@ -52,8 +52,10 @@
             <label for="passwort">Passwort <br /></label>
             <input
                 type="password"
-                name=""
+                name="passwort"
                 id="passwort"
+                minlength="3"
+                maxlength="9"
                 placeholder="Passwort"
                 required
             />
@@ -62,7 +64,9 @@
             <label for="repPasswort">Passwort wiederholen <br /></label>
             <input
                 type="password"
-                name=""
+                name="PasswortRep"
+                minlength="3"
+                maxlength="9"
                 id="repPasswort"
                 placeholder="Passwort"
                 required
@@ -73,7 +77,7 @@
             <input type="date" name="" id="birthday" required />
             <br />
             <br /><label for="gender">Geschlecht <br /></label>
-            <select name="" id="gender" required>
+            <select name="gender" id="gender" required>
                 <option value="">...</option>
                 <option value="male">male</option>
                 <option value="female">female</option>
@@ -86,7 +90,7 @@
             <textarea
                 rows="8"
                 cols="35"
-                name=""
+                name="info"
                 id="info"
                 placeholder="Ich bin ..."
                 required
@@ -94,11 +98,11 @@
             <br />
             <br />
             <label for="agb">Zustimmung AGB</label>
-            <input type="radio" name="" id="agb" required />
+            <input type="radio" name="agb" id="agb" required />
             <br />
             <br />
             <label for="datenschutz">Zustimmung Datenschutz</label>
-            <input type="radio" name="" id="datenschutz" required />
+            <input type="radio" name="Datenschutz" id="datenschutz" required />
 
             <br />
             <br />
